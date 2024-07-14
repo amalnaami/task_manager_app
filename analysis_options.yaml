@@ -1,0 +1,14 @@
+include: package:very_good_analysis/analysis_options.yaml
+
+analyzer:
+  errors:
+    invalid_annotation_target: ignore
+  plugins:
+    - drift
+  exclude:
+    - "*/**.g.dart"
+    - "*/**.config.dart"
+    - "*/**.freezed.dart"
+    - "*/**_model.dart"
+    - "lib/generated/assets.dart"
+    - "lib/core/constant/localizations/honest_pet_localization.dart"
