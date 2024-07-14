@@ -12,13 +12,13 @@ Task manager app using Flutter that allows users to manage their tasks efficient
 Download or clone this repo by using the link below:
 
 ```bash
-  https://github.com/amalnaami/task_manager_app.git
+https://github.com/amalnaami/task_manager_app.git
 ```
 
 #### Step 2
 Go to project root and execute the following command in console to get the required dependencies:
 ```bash
-  flutter pub get
+flutter pub get
 ```
 
 ### Step 3 (optional for iOS)
@@ -35,7 +35,7 @@ cd ..
 Generate files:
 
 ```bash
-  flutter pub run build_runner build --delete-conflicting-outputs
+flutter pub run build_runner build --delete-conflicting-outputs
 ```
 
 #### Step 5:
@@ -58,7 +58,7 @@ flutter run
   |- routing/
   |- service/
     |- cache/
-    |- api_service/
+    |- api_service.dart
   |- main.dart
 | test/
   |- chache_shared_prefs_test.dart
