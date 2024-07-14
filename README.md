@@ -12,7 +12,7 @@ Task manager app using Flutter that allows users to manage their tasks efficient
 Download or clone this repo by using the link below:
 
 ```bash
-  https://github.com/HonestPet/HonestPet-client-mobile-app
+  https://github.com/amalnaami/task_manager_app.git
 ```
 
 #### Step 2
@@ -48,16 +48,38 @@ flutter run
 #### Here is the core folder structure which flutter provides.
 
 ```bash
-| flutter-app/
-  |- android
-  |- build
-  |- ios
-  |- lib/
-     |- honestpet_app
-     |- main.dart
-  |- test/
+| lib/
+  |- core/
+    |- failure/
+  |- infrastructure/
+  |- presentation/
+    |- feature/
+    |- task_manager/
+  |- routing/
+  |- service/
+    |- cache/
+    |- api_service/
+  |- main.dart
+| test/
+  |- chache_shared_prefs_test.dart
 ```
 </pre>
 
 ## 🚀 Libraries & Tools Used
+* [auto_route](https://pub.dev/packages/auto_route)
+* [bloc](https://pub.dev/packages/bloc)
+* [dartz](https://pub.dev/packages/dartz)
+* [dio](https://pub.dev/packages/dio)
+* [equatable](https://pub.dev/packages/equatable)
+* [flutter_bloc](https://pub.dev/packages/flutter_bloc)
+* [freezed_annotation](https://pub.dev/packages/freezed_annotation)
+* [get_it](https://pub.dev/packages/get_it)
+* [mockito](https://pub.dev/packages/mockito)
+* [shared_preferences](https://pub.dev/packages/shared_preferences)
+* [json_annotation](https://pub.dev/packages/json_annotation)
+* [flutter_animate](https://pub.dev/packages/flutter_animate)
+* [auto_route_generator](https://pub.dev/packages/auto_route_generator)
+* [build_runner](https://pub.dev/packages/build_runner)
+* [freezed](https://pub.dev/packages/freezed)
+* [json_serializable](https://pub.dev/packages/json_serializable)
 * [very_good_analysis](https://pub.dev/packages/very_good_analysis)
