@@ -14,8 +14,8 @@ class LogoutButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return IconButton(
-      onPressed: () {
+    return GestureDetector(
+      onTap: () {
         prefs.remove(key: TaskManagerConstants.userToken);
         prefs.remove(key: TaskManagerConstants.tasks);
         showSnackBar(context, 'Logout Successfully', Colors.green);
@@ -26,7 +26,7 @@ class LogoutButton extends StatelessWidget {
           predicate: (_) => false,
         );
       },
-      icon: Icon(
+      child: Icon(
         Icons.logout,
         size: 20,
         color: TaskManagementColors.backgroundColor,

@@ -16,7 +16,7 @@ class CheckboxWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CheckboxListTile(
-      activeColor: TaskManagementColors.pinkColor,
+      activeColor: TaskManagementColors.yellowColor,
       checkColor: TaskManagementColors.backgroundColor,
       value: value,
       contentPadding: EdgeInsets.zero,

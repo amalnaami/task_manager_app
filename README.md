@@ -1,16 +1,63 @@
-# task_manager_app
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=Task+Manager+App" alt="Typing SVG" /></a>
 
-A new Flutter project.
+![alt text](assets/logo.png)
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+## Description:
+Task manager app using Flutter that allows users to manage their tasks efficiently.
 
-A few resources to get you started if this is your first Flutter project:
+## How to use:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+#### Step 1
+Download or clone this repo by using the link below:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+  https://github.com/HonestPet/HonestPet-client-mobile-app
+```
+
+#### Step 2
+Go to project root and execute the following command in console to get the required dependencies:
+```bash
+  flutter pub get
+```
+
+### Step 3 (optional for iOS)
+```bash
+cd ios
+```
+```bash
+pod install --repo-update
+```
+```bash
+cd ..
+```
+#### Step 4
+Generate files:
+
+```bash
+  flutter pub run build_runner build --delete-conflicting-outputs
+```
+
+#### Step 5:
+Run app
+```bash
+flutter run
+```
+
+## 🚀 Folder Structure
+#### Here is the core folder structure which flutter provides.
+
+```bash
+| flutter-app/
+  |- android
+  |- build
+  |- ios
+  |- lib/
+     |- honestpet_app
+     |- main.dart
+  |- test/
+```
+</pre>
+
+## 🚀 Libraries & Tools Used
+* [very_good_analysis](https://pub.dev/packages/very_good_analysis)

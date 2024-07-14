@@ -1,15 +1,8 @@
-import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:task_manager_app/core/task_management_colors.dart';
-import 'package:task_manager_app/infrastructure/injection.dart';
-import 'package:task_manager_app/presentation/feature/login/presentation/bloc/login_bloc.dart';
-import 'package:task_manager_app/presentation/feature/login/presentation/bloc/login_event.dart';
-import 'package:task_manager_app/presentation/feature/login/presentation/bloc/login_state.dart';
 import 'package:task_manager_app/presentation/feature/login/presentation/pages/widgets/fields.dart';
 import 'package:task_manager_app/presentation/feature/login/presentation/pages/widgets/login_button.dart';
 import 'package:task_manager_app/presentation/feature/login/presentation/pages/widgets/sign_up_option.dart';
-import 'package:task_manager_app/routing/router.dart';
 
 class LoginFieldsContent extends StatefulWidget {
   const LoginFieldsContent({super.key});

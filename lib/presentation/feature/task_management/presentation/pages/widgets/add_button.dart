@@ -7,6 +7,7 @@ import 'package:task_manager_app/presentation/feature/task_management/presentati
 
 class AddButton extends StatefulWidget {
   const AddButton({super.key, required this.scrollToEnd});
+
   final void Function() scrollToEnd;
 
   @override
@@ -20,6 +21,15 @@ class _AddButtonState extends State<AddButton> {
       listener: (context, state) {},
       builder: (context, state) {
         return IconButton(
+          style: ButtonStyle(
+            backgroundColor:
+                MaterialStateProperty.all(TaskManagementColors.pinkColor),
+            shape: MaterialStateProperty.all(
+              RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(50),
+              ),
+            ),
+          ),
           onPressed: () => showAddTaskBottomSheet(
             context,
             BlocProvider.of<TaskManagementBloc>(context),
