@@ -25,6 +25,36 @@ void main() {
     });
   });
 
+  group('PUT Method', () {
+    test('Test PUT int value', () async {
+      const String key = 'intKey';
+
+      await service!.put(key: key, value: 1);
+      expect(service!.read<int>(key, null), 1);
+    });
+
+    test('Test PUT String value', () async {
+      const String key = 'stringKey';
+
+      await service!.put(key: key, value: 'TestValue');
+      expect(service!.read<String>(key, null), 'TestValue');
+    });
+
+    test('Test PUT Boolean value', () async {
+      const String key = 'booleanKey';
+
+      await service!.put(key: key, value: false);
+      expect(service!.read<bool>(key, null), false);
+    });
+
+    test('Test PUT Double value', () async {
+      const String key = 'doubleKey';
+
+      await service!.put(key: key, value: 9.7);
+      expect(service!.read<double>(key, null), 9.7);
+    });
+  });
+
   group('REMOVE Method', () {
     test('Test REMOVE int value', () async {
       const String key = 'intKey';
