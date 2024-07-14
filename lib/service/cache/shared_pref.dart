@@ -12,6 +12,11 @@ class SharedPrefsService {
   static final SharedPrefsService _prefsService =
       SharedPrefsService._internal();
 
+  /// For testing purposes only.
+  static void setSharedPreferences(SharedPreferences mockPrefs) {
+    _prefsService._prefs = mockPrefs;
+  }
+
   static Future<SharedPrefsService> init() async {
     _prefsService._prefs = await SharedPreferences.getInstance();
     return SharedPrefsService();
